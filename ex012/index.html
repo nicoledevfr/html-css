@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente</H1>
+    OBS:videos hospedados dessa maneira consomem muita memória, não é recomendavel e vai pesar no bolso do cliente.
+    <p>este video está hospedado no meu próprio servidor.</p>
+    video em MP4
+    <video src="midia/Meuvideo.Mp4.mp4" width="650" controls></video>
+    video em MKV
+    <video src="midia/Meuvideo.mkv" width="650" controls></video>
+    video em WEBM
+    <video src="midia/meuvideo.webm.mp4" width="650"></video>
+    
+    <!--Para o formato ser compativel com todos os navegadores ao msm tempo, repita as tags abaixo -->
+     <p>video compatível com todos os navegadores:</p>
+    <video width= 500 poster="imagens/logotipo principa.png" controls>
+       <source src="midia/Meuvideo.Mp4.mp4" type="video/mp4">
+       <source src="midia/Meuvideo.mkv" type="video/mkv">
+       <source src="midia/meuvideo.webm.mp4" type="video/webm">
+     <p> seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+    <h1>inserindo vídeos do youtube</h1>
+    obs: maneira muito melhor de inserir vídeos no site, pois o cliente não precisa pagar, apenas tome cuidado com os direitos autorais se for pegar  videos de outras pessoas.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L3jZF28O0uE?si=1s-ecYX1QBXAPSNF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
